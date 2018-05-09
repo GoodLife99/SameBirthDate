@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+ <head> 
+  <meta charset="utf-8" /> 
+  <title>Find someone who was born in the same day as you</title> 
+<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="./js/jquery.min.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+
+<script src="./js/bootstrap-datepicker.js"></script>
+<script src="./js/index.js"></script>
+<script src="./js/nebPay.js"></script>
+<link rel="stylesheet" href="./css/bootstrap-datepicker.css" type="text/css" />
+ </head> 
+ <body> 
+  <div class="container"> 
+   <div class="row clearfix"> 
+    <div class="col-md-12 column"> 
+     <blockquote> 
+      <p> Do you believe in fate? </p> 
+      <small>Let's find someone in the world who was <cite>born in the same day</cite> as you </small> 
+     </blockquote> 
+     <div class="panel panel-default"> 
+      <div class="panel-heading"> 
+       <h3 class="panel-title">Step 1. Upload your birthdate to the Nebulas Chain. (Your information in Nebulas Chain is anonymous.) </h3> 
+      </div> 
+      <div class="panel-body"> 
+       <form role="form"> 
+   <!--
+    <div class="form-group"> 
+         <label for="nasAddress">NAS Address</label>
+         <input type="text" class="form-control" id="nasAddress" /> 
+        </div>
+-->
+
+<div class="form-group">
+<label for="datepicker">Your Birth Date</label>
+<br>
+<input type="text" class="form-control" id="datepicker" /> 
+</div> 
+
+
+        <div class="form-group"> 
+         <label for="exampleInputEmail1">Email address(For the purpose of having someone contact you)</label>
+         <input type="email" class="form-control" id="exampleInputEmail1" /> 
+        </div>
+        <button type="button" class="btn btn-default" id="savebutton">Save</button> 
+       </form> 
+      </div>
+<!--   
+      <div class="panel-footer">
+        Panel footer 
+      </div> 
+  -->
+     </div> 
+     <div class="panel panel-default"> 
+      <div class="panel-heading"> 
+       <h3 class="panel-title">Step 2. Search who was born in the same day as you in the world. </h3> 
+      </div> 
+      <div class="panel-body">
+               <form role="form"> 
+   <!--
+    <div class="form-group"> 
+         <label for="nasAddress">NAS Address</label>
+         <input type="text" class="form-control" id="nasAddress" /> 
+        </div>
+-->
+
+<div class="form-group">
+<label for="datepickerSearch">Your Birth Date</label>
+<br>
+<input type="text" class="form-control" id="datepickerSearch" /> 
+</div> 
+
+        <button type="button" class="btn btn-default" id="searchbutton">Search</button> 
+       </form> 
+      </div> 
+      <div class="panel-footer">
+  
+  <div class="row clearfix" >
+<div class="col-md-12 column">
+<span id="recordscount">0 records</span>
+<table class="table table-condensed table-bordered">
+<thead>
+<tr>
+<th>
+No
+</th>
+<th>
+Birth Date
+</th>
+<th>
+Email<br>(Contact me, if you want to make friends with me)
+</th>
+<th>
+Uploaded By
+</th>
+</tr>
+</thead>
+<tbody id="searchresult">
+<!--
+<tr class="warning">
+<td >
+1
+</td>
+<td>
+TB - Monthly
+</td>
+<td>
+01/04/2012
+</td>
+<td>
+Default
+</td>
+</tr>
+<tr class="info">
+<td>
+1
+</td>
+<td>
+TB - Monthly
+</td>
+<td>
+01/04/2012
+</td>
+<td>
+Approved
+</td>
+</tr>
+<tr class="warning">
+<td>
+2
+</td>
+<td>
+TB - Monthly
+</td>
+<td>
+02/04/2012
+</td>
+<td>
+Declined
+</td>
+</tr>
+<tr class="info">
+<td>
+3
+</td>
+<td>
+TB - Monthly
+</td>
+<td>
+03/04/2012
+</td>
+<td>
+Pending
+</td>
+</tr>
+<tr class="warning">
+<td>
+4
+</td>
+<td>
+TB - Monthly
+</td>
+<td>
+04/04/2012
+</td>
+<td>
+Call in to confirm
+</td>
+</tr>
+-->
+</tbody>
+</table>
+</div>
+</div>
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+  </div>  
+  
+
+  <script>
+$('#datepicker').datepicker({
+format: "mm/dd/yyyy"
+});
+$('#datepickerSearch').datepicker({
+format: "mm/dd/yyyy"
+});
+  </script>
+ </body>
+</html>
