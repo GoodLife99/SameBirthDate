@@ -49,6 +49,9 @@ $(function(){
 				var myArr = JSON.parse(resp.result);
 
 				var tempStr = "";
+				if(myArr.length == 0){
+					alert("No records found.");
+				}
 				for(var i=0;i<myArr.length;i++){					
 						if(i%2 == 0){
 							tempStr += '<tr class="warning">';
